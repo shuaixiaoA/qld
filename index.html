@@ -1,1179 +1,362 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>嘉欣在我心</title>
 
-<style>
-body {
-  background: #000;
-  height: 100vh;
-  overflow: hidden;
-}
+<title>向全世界安利左嘉欣</title>
 
-#ui .love {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -225px 0 0 -225px;
-}
 
-#ui .love_word {
-  color: red;
-  font-size: 1.4rem;
-  transform: translateY(-100%) rotateZ(-30deg);
-  font-family: 'Dosis', sans-serif;
-  text-shadow: 0 0 10px #ffc800;
-  letter-spacing: 2px;
-}
-#ui .love_horizontal {
-  animation: horizontal 10000ms infinite alternate ease-in-out;
-}
-#ui .love_vertical {
-  animation: vertical 20000ms infinite linear;
-}
-#ui .love:nth-child(1) .love_horizontal {
-  animation-delay: -300ms;
-}
-#ui .love:nth-child(1) .love_vertical {
-  animation-delay: -300ms;
-}
-#ui .love:nth-child(2) .love_horizontal {
-  animation-delay: -600ms;
-}
-#ui .love:nth-child(2) .love_vertical {
-  animation-delay: -600ms;
-}
-#ui .love:nth-child(3) .love_horizontal {
-  animation-delay: -900ms;
-}
-#ui .love:nth-child(3) .love_vertical {
-  animation-delay: -900ms;
-}
-#ui .love:nth-child(4) .love_horizontal {
-  animation-delay: -1200ms;
-}
-#ui .love:nth-child(4) .love_vertical {
-  animation-delay: -1200ms;
-}
-#ui .love:nth-child(5) .love_horizontal {
-  animation-delay: -1500ms;
-}
-#ui .love:nth-child(5) .love_vertical {
-  animation-delay: -1500ms;
-}
-#ui .love:nth-child(6) .love_horizontal {
-  animation-delay: -1800ms;
-}
-#ui .love:nth-child(6) .love_vertical {
-  animation-delay: -1800ms;
-}
-#ui .love:nth-child(7) .love_horizontal {
-  animation-delay: -2100ms;
-}
-#ui .love:nth-child(7) .love_vertical {
-  animation-delay: -2100ms;
-}
-#ui .love:nth-child(8) .love_horizontal {
-  animation-delay: -2400ms;
-}
-#ui .love:nth-child(8) .love_vertical {
-  animation-delay: -2400ms;
-}
-#ui .love:nth-child(9) .love_horizontal {
-  animation-delay: -2700ms;
-}
-#ui .love:nth-child(9) .love_vertical {
-  animation-delay: -2700ms;
-}
-#ui .love:nth-child(10) .love_horizontal {
-  animation-delay: -3000ms;
-}
-#ui .love:nth-child(10) .love_vertical {
-  animation-delay: -3000ms;
-}
-#ui .love:nth-child(11) .love_horizontal {
-  animation-delay: -3300ms;
-}
-#ui .love:nth-child(11) .love_vertical {
-  animation-delay: -3300ms;
-}
-#ui .love:nth-child(12) .love_horizontal {
-  animation-delay: -3600ms;
-}
-#ui .love:nth-child(12) .love_vertical {
-  animation-delay: -3600ms;
-}
-#ui .love:nth-child(13) .love_horizontal {
-  animation-delay: -3900ms;
-}
-#ui .love:nth-child(13) .love_vertical {
-  animation-delay: -3900ms;
-}
-#ui .love:nth-child(14) .love_horizontal {
-  animation-delay: -4200ms;
-}
-#ui .love:nth-child(14) .love_vertical {
-  animation-delay: -4200ms;
-}
-#ui .love:nth-child(15) .love_horizontal {
-  animation-delay: -4500ms;
-}
-#ui .love:nth-child(15) .love_vertical {
-  animation-delay: -4500ms;
-}
-#ui .love:nth-child(16) .love_horizontal {
-  animation-delay: -4800ms;
-}
-#ui .love:nth-child(16) .love_vertical {
-  animation-delay: -4800ms;
-}
-#ui .love:nth-child(17) .love_horizontal {
-  animation-delay: -5100ms;
-}
-#ui .love:nth-child(17) .love_vertical {
-  animation-delay: -5100ms;
-}
-#ui .love:nth-child(18) .love_horizontal {
-  animation-delay: -5400ms;
-}
-#ui .love:nth-child(18) .love_vertical {
-  animation-delay: -5400ms;
-}
-#ui .love:nth-child(19) .love_horizontal {
-  animation-delay: -5700ms;
-}
-#ui .love:nth-child(19) .love_vertical {
-  animation-delay: -5700ms;
-}
-#ui .love:nth-child(20) .love_horizontal {
-  animation-delay: -6000ms;
-}
-#ui .love:nth-child(20) .love_vertical {
-  animation-delay: -6000ms;
-}
-#ui .love:nth-child(21) .love_horizontal {
-  animation-delay: -6300ms;
-}
-#ui .love:nth-child(21) .love_vertical {
-  animation-delay: -6300ms;
-}
-#ui .love:nth-child(22) .love_horizontal {
-  animation-delay: -6600ms;
-}
-#ui .love:nth-child(22) .love_vertical {
-  animation-delay: -6600ms;
-}
-#ui .love:nth-child(23) .love_horizontal {
-  animation-delay: -6900ms;
-}
-#ui .love:nth-child(23) .love_vertical {
-  animation-delay: -6900ms;
-}
-#ui .love:nth-child(24) .love_horizontal {
-  animation-delay: -7200ms;
-}
-#ui .love:nth-child(24) .love_vertical {
-  animation-delay: -7200ms;
-}
-#ui .love:nth-child(25) .love_horizontal {
-  animation-delay: -7500ms;
-}
-#ui .love:nth-child(25) .love_vertical {
-  animation-delay: -7500ms;
-}
-#ui .love:nth-child(26) .love_horizontal {
-  animation-delay: -7800ms;
-}
-#ui .love:nth-child(26) .love_vertical {
-  animation-delay: -7800ms;
-}
-#ui .love:nth-child(27) .love_horizontal {
-  animation-delay: -8100ms;
-}
-#ui .love:nth-child(27) .love_vertical {
-  animation-delay: -8100ms;
-}
-#ui .love:nth-child(28) .love_horizontal {
-  animation-delay: -8400ms;
-}
-#ui .love:nth-child(28) .love_vertical {
-  animation-delay: -8400ms;
-}
-#ui .love:nth-child(29) .love_horizontal {
-  animation-delay: -8700ms;
-}
-#ui .love:nth-child(29) .love_vertical {
-  animation-delay: -8700ms;
-}
-#ui .love:nth-child(30) .love_horizontal {
-  animation-delay: -9000ms;
-}
-#ui .love:nth-child(30) .love_vertical {
-  animation-delay: -9000ms;
-}
-#ui .love:nth-child(31) .love_horizontal {
-  animation-delay: -9300ms;
-}
-#ui .love:nth-child(31) .love_vertical {
-  animation-delay: -9300ms;
-}
-#ui .love:nth-child(32) .love_horizontal {
-  animation-delay: -9600ms;
-}
-#ui .love:nth-child(32) .love_vertical {
-  animation-delay: -9600ms;
-}
-#ui .love:nth-child(33) .love_horizontal {
-  animation-delay: -9900ms;
-}
-#ui .love:nth-child(33) .love_vertical {
-  animation-delay: -9900ms;
-}
-#ui .love:nth-child(34) .love_horizontal {
-  animation-delay: -10200ms;
-}
-#ui .love:nth-child(34) .love_vertical {
-  animation-delay: -10200ms;
-}
-#ui .love:nth-child(35) .love_horizontal {
-  animation-delay: -10500ms;
-}
-#ui .love:nth-child(35) .love_vertical {
-  animation-delay: -10500ms;
-}
-#ui .love:nth-child(36) .love_horizontal {
-  animation-delay: -10800ms;
-}
-#ui .love:nth-child(36) .love_vertical {
-  animation-delay: -10800ms;
-}
-#ui .love:nth-child(37) .love_horizontal {
-  animation-delay: -11100ms;
-}
-#ui .love:nth-child(37) .love_vertical {
-  animation-delay: -11100ms;
-}
-#ui .love:nth-child(38) .love_horizontal {
-  animation-delay: -11400ms;
-}
-#ui .love:nth-child(38) .love_vertical {
-  animation-delay: -11400ms;
-}
-#ui .love:nth-child(39) .love_horizontal {
-  animation-delay: -11700ms;
-}
-#ui .love:nth-child(39) .love_vertical {
-  animation-delay: -11700ms;
-}
-#ui .love:nth-child(40) .love_horizontal {
-  animation-delay: -12000ms;
-}
-#ui .love:nth-child(40) .love_vertical {
-  animation-delay: -12000ms;
-}
-#ui .love:nth-child(41) .love_horizontal {
-  animation-delay: -12300ms;
-}
-#ui .love:nth-child(41) .love_vertical {
-  animation-delay: -12300ms;
-}
-#ui .love:nth-child(42) .love_horizontal {
-  animation-delay: -12600ms;
-}
-#ui .love:nth-child(42) .love_vertical {
-  animation-delay: -12600ms;
-}
-#ui .love:nth-child(43) .love_horizontal {
-  animation-delay: -12900ms;
-}
-#ui .love:nth-child(43) .love_vertical {
-  animation-delay: -12900ms;
-}
-#ui .love:nth-child(44) .love_horizontal {
-  animation-delay: -13200ms;
-}
-#ui .love:nth-child(44) .love_vertical {
-  animation-delay: -13200ms;
-}
-#ui .love:nth-child(45) .love_horizontal {
-  animation-delay: -13500ms;
-}
-#ui .love:nth-child(45) .love_vertical {
-  animation-delay: -13500ms;
-}
-#ui .love:nth-child(46) .love_horizontal {
-  animation-delay: -13800ms;
-}
-#ui .love:nth-child(46) .love_vertical {
-  animation-delay: -13800ms;
-}
-#ui .love:nth-child(47) .love_horizontal {
-  animation-delay: -14100ms;
-}
-#ui .love:nth-child(47) .love_vertical {
-  animation-delay: -14100ms;
-}
-#ui .love:nth-child(48) .love_horizontal {
-  animation-delay: -14400ms;
-}
-#ui .love:nth-child(48) .love_vertical {
-  animation-delay: -14400ms;
-}
-#ui .love:nth-child(49) .love_horizontal {
-  animation-delay: -14700ms;
-}
-#ui .love:nth-child(49) .love_vertical {
-  animation-delay: -14700ms;
-}
-#ui .love:nth-child(50) .love_horizontal {
-  animation-delay: -15000ms;
-}
-#ui .love:nth-child(50) .love_vertical {
-  animation-delay: -15000ms;
-}
-#ui .love:nth-child(51) .love_horizontal {
-  animation-delay: -15300ms;
-}
-#ui .love:nth-child(51) .love_vertical {
-  animation-delay: -15300ms;
-}
-#ui .love:nth-child(52) .love_horizontal {
-  animation-delay: -15600ms;
-}
-#ui .love:nth-child(52) .love_vertical {
-  animation-delay: -15600ms;
-}
-#ui .love:nth-child(53) .love_horizontal {
-  animation-delay: -15900ms;
-}
-#ui .love:nth-child(53) .love_vertical {
-  animation-delay: -15900ms;
-}
-#ui .love:nth-child(54) .love_horizontal {
-  animation-delay: -16200ms;
-}
-#ui .love:nth-child(54) .love_vertical {
-  animation-delay: -16200ms;
-}
-#ui .love:nth-child(55) .love_horizontal {
-  animation-delay: -16500ms;
-}
-#ui .love:nth-child(55) .love_vertical {
-  animation-delay: -16500ms;
-}
-#ui .love:nth-child(56) .love_horizontal {
-  animation-delay: -16800ms;
-}
-#ui .love:nth-child(56) .love_vertical {
-  animation-delay: -16800ms;
-}
-#ui .love:nth-child(57) .love_horizontal {
-  animation-delay: -17100ms;
-}
-#ui .love:nth-child(57) .love_vertical {
-  animation-delay: -17100ms;
-}
-#ui .love:nth-child(58) .love_horizontal {
-  animation-delay: -17400ms;
-}
-#ui .love:nth-child(58) .love_vertical {
-  animation-delay: -17400ms;
-}
-#ui .love:nth-child(59) .love_horizontal {
-  animation-delay: -17700ms;
-}
-#ui .love:nth-child(59) .love_vertical {
-  animation-delay: -17700ms;
-}
-#ui .love:nth-child(60) .love_horizontal {
-  animation-delay: -18000ms;
-}
-#ui .love:nth-child(60) .love_vertical {
-  animation-delay: -18000ms;
-}
-#ui .love:nth-child(61) .love_horizontal {
-  animation-delay: -18300ms;
-}
-#ui .love:nth-child(61) .love_vertical {
-  animation-delay: -18300ms;
-}
-#ui .love:nth-child(62) .love_horizontal {
-  animation-delay: -18600ms;
-}
-#ui .love:nth-child(62) .love_vertical {
-  animation-delay: -18600ms;
-}
-#ui .love:nth-child(63) .love_horizontal {
-  animation-delay: -18900ms;
-}
-#ui .love:nth-child(63) .love_vertical {
-  animation-delay: -18900ms;
-}
-#ui .love:nth-child(64) .love_horizontal {
-  animation-delay: -19200ms;
-}
-#ui .love:nth-child(64) .love_vertical {
-  animation-delay: -19200ms;
-}
-#ui .love:nth-child(65) .love_horizontal {
-  animation-delay: -19500ms;
-}
-#ui .love:nth-child(65) .love_vertical {
-  animation-delay: -19500ms;
-}
-#ui .love:nth-child(66) .love_horizontal {
-  animation-delay: -19800ms;
-}
-#ui .love:nth-child(66) .love_vertical {
-  animation-delay: -19800ms;
-}
-#ui .love:nth-child(67) .love_horizontal {
-  animation-delay: -20100ms;
-}
-#ui .love:nth-child(67) .love_vertical {
-  animation-delay: -20100ms;
-}
-#ui .love:nth-child(68) .love_horizontal {
-  animation-delay: -20400ms;
-}
-#ui .love:nth-child(68) .love_vertical {
-  animation-delay: -20400ms;
-}
-#ui .love:nth-child(69) .love_horizontal {
-  animation-delay: -20700ms;
-}
-#ui .love:nth-child(69) .love_vertical {
-  animation-delay: -20700ms;
-}
-#ui .love:nth-child(70) .love_horizontal {
-  animation-delay: -21000ms;
-}
-#ui .love:nth-child(70) .love_vertical {
-  animation-delay: -21000ms;
-}
-#ui .love:nth-child(71) .love_horizontal {
-  animation-delay: -21300ms;
-}
-#ui .love:nth-child(71) .love_vertical {
-  animation-delay: -21300ms;
-}
-#ui .love:nth-child(72) .love_horizontal {
-  animation-delay: -21600ms;
-}
-#ui .love:nth-child(72) .love_vertical {
-  animation-delay: -21600ms;
-}
-#ui .love:nth-child(73) .love_horizontal {
-  animation-delay: -21900ms;
-}
-#ui .love:nth-child(73) .love_vertical {
-  animation-delay: -21900ms;
-}
-#ui .love:nth-child(74) .love_horizontal {
-  animation-delay: -22200ms;
-}
-#ui .love:nth-child(74) .love_vertical {
-  animation-delay: -22200ms;
-}
-#ui .love:nth-child(75) .love_horizontal {
-  animation-delay: -22500ms;
-}
-#ui .love:nth-child(75) .love_vertical {
-  animation-delay: -22500ms;
-}
-#ui .love:nth-child(76) .love_horizontal {
-  animation-delay: -22800ms;
-}
-#ui .love:nth-child(76) .love_vertical {
-  animation-delay: -22800ms;
-}
-#ui .love:nth-child(77) .love_horizontal {
-  animation-delay: -23100ms;
-}
-#ui .love:nth-child(77) .love_vertical {
-  animation-delay: -23100ms;
-}
-#ui .love:nth-child(78) .love_horizontal {
-  animation-delay: -23400ms;
-}
-#ui .love:nth-child(78) .love_vertical {
-  animation-delay: -23400ms;
-}
-#ui .love:nth-child(79) .love_horizontal {
-  animation-delay: -23700ms;
-}
-#ui .love:nth-child(79) .love_vertical {
-  animation-delay: -23700ms;
-}
-#ui .love:nth-child(80) .love_horizontal {
-  animation-delay: -24000ms;
-}
-#ui .love:nth-child(80) .love_vertical {
-  animation-delay: -24000ms;
-}
-#ui .love:nth-child(81) .love_horizontal {
-  animation-delay: -24300ms;
-}
-#ui .love:nth-child(81) .love_vertical {
-  animation-delay: -24300ms;
-}
-#ui .love:nth-child(82) .love_horizontal {
-  animation-delay: -24600ms;
-}
-#ui .love:nth-child(82) .love_vertical {
-  animation-delay: -24600ms;
-}
-#ui .love:nth-child(83) .love_horizontal {
-  animation-delay: -24900ms;
-}
-#ui .love:nth-child(83) .love_vertical {
-  animation-delay: -24900ms;
-}
-#ui .love:nth-child(84) .love_horizontal {
-  animation-delay: -25200ms;
-}
-#ui .love:nth-child(84) .love_vertical {
-  animation-delay: -25200ms;
-}
-#ui .love:nth-child(85) .love_horizontal {
-  animation-delay: -25500ms;
-}
-#ui .love:nth-child(85) .love_vertical {
-  animation-delay: -25500ms;
-}
-#ui .love:nth-child(86) .love_horizontal {
-  animation-delay: -25800ms;
-}
-#ui .love:nth-child(86) .love_vertical {
-  animation-delay: -25800ms;
-}
-#ui .love:nth-child(87) .love_horizontal {
-  animation-delay: -26100ms;
-}
-#ui .love:nth-child(87) .love_vertical {
-  animation-delay: -26100ms;
-}
-#ui .love:nth-child(88) .love_horizontal {
-  animation-delay: -26400ms;
-}
-#ui .love:nth-child(88) .love_vertical {
-  animation-delay: -26400ms;
-}
-#ui .love:nth-child(89) .love_horizontal {
-  animation-delay: -26700ms;
-}
-#ui .love:nth-child(89) .love_vertical {
-  animation-delay: -26700ms;
-}
-#ui .love:nth-child(90) .love_horizontal {
-  animation-delay: -27000ms;
-}
-#ui .love:nth-child(90) .love_vertical {
-  animation-delay: -27000ms;
-}
-#ui .love:nth-child(91) .love_horizontal {
-  animation-delay: -27300ms;
-}
-#ui .love:nth-child(91) .love_vertical {
-  animation-delay: -27300ms;
-}
-#ui .love:nth-child(92) .love_horizontal {
-  animation-delay: -27600ms;
-}
-#ui .love:nth-child(92) .love_vertical {
-  animation-delay: -27600ms;
-}
-#ui .love:nth-child(93) .love_horizontal {
-  animation-delay: -27900ms;
-}
-#ui .love:nth-child(93) .love_vertical {
-  animation-delay: -27900ms;
-}
-#ui .love:nth-child(94) .love_horizontal {
-  animation-delay: -28200ms;
-}
-#ui .love:nth-child(94) .love_vertical {
-  animation-delay: -28200ms;
-}
-#ui .love:nth-child(95) .love_horizontal {
-  animation-delay: -28500ms;
-}
-#ui .love:nth-child(95) .love_vertical {
-  animation-delay: -28500ms;
-}
-#ui .love:nth-child(96) .love_horizontal {
-  animation-delay: -28800ms;
-}
-#ui .love:nth-child(96) .love_vertical {
-  animation-delay: -28800ms;
-}
-#ui .love:nth-child(97) .love_horizontal {
-  animation-delay: -29100ms;
-}
-#ui .love:nth-child(97) .love_vertical {
-  animation-delay: -29100ms;
-}
-#ui .love:nth-child(98) .love_horizontal {
-  animation-delay: -29400ms;
-}
-#ui .love:nth-child(98) .love_vertical {
-  animation-delay: -29400ms;
-}
-#ui .love:nth-child(99) .love_horizontal {
-  animation-delay: -29700ms;
-}
-#ui .love:nth-child(99) .love_vertical {
-  animation-delay: -29700ms;
-}
-#ui .love:nth-child(100) .love_horizontal {
-  animation-delay: -30000ms;
-}
-#ui .love:nth-child(100) .love_vertical {
-  animation-delay: -30000ms;
-}
+<!-- Favicons
+    ================================================== -->
 
-@keyframes horizontal {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(450px);
-  }
-}
-@keyframes vertical {
-  0% {
-    transform: translateY(180px);
-  }
-  10% {
-    transform: translateY(45px);
-  }
-  15% {
-    transform: translateY(4.5px);
-  }
-  18% {
-    transform: translateY(0px);
-  }
-  20% {
-    transform: translateY(4.5px);
-  }
-  22% {
-    transform: translateY(34.61538px);
-  }
-  24% {
-    transform: translateY(64.28571px);
-  }
-  25% {
-    transform: translateY(112.5px);
-  }
-  26% {
-    transform: translateY(64.28571px);
-  }
-  28% {
-    transform: translateY(34.61538px);
-  }
-  30% {
-    transform: translateY(4.5px);
-  }
-  32% {
-    transform: translateY(0px);
-  }
-  35% {
-    transform: translateY(4.5px);
-  }
-  40% {
-    transform: translateY(45px);
-  }
-  50% {
-    transform: translateY(180px);
-  }
-  71% {
-    transform: translateY(428.57143px);
-  }
-  72.5% {
-    transform: translateY(441.17647px);
-  }
-  75% {
-    transform: translateY(450px);
-  }
-  77.5% {
-    transform: translateY(441.17647px);
-  }
-  79% {
-    transform: translateY(428.57143px);
-  }
-  100% {
-    transform: translateY(180px);
-  }
-}
-</style>
+<link rel="shortcut icon" href="img/favicon_jianli.ico" type="image/x-icon">
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-<div id="ui">
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
-      </div>
-    </div>
-  </div>
-  <div class="love">
-    <div class="love_horizontal">
-      <div class="love_vertical">
-        <div class="love_word">嘉欣</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i>主页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">基本资料</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#works">不可错过的嘉欣</a>
+                    </li>                    
+                                     
+                    <li>
+                        <a class="page-scroll" href="#team">不同的嘉欣</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#testimonials">相对嘉欣说的话</a>
+                    </li>                    
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 style="color:pink">GNZ48-左嘉欣<span class="brand-heading"></span></h1>
+                        <p class="intro-text" style="color:red"></p>
+                        <a href="#services" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--<div class="copyrights" style="color:pink">GNZ48-左嘉欣<a href="http://blog.youzewang.com/jianli" style="color:pink">被星星环绕的小偶像</a></div>-->
+<!-- Services Section -->
+<div id="services" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>基本 <strong>资料</strong></h2>
+      <hr>
+      </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-laptop"></i>
+        <h4><strong>个人信息</strong></h4>
+        <p>
+		 中文名:左嘉欣：性别：女</br>
+		年龄: 21岁 籍贯：上海
+		</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-code"></i>
+        <h4><strong>兴趣爱好</strong></h4>
+        <p>
+		摄影、游泳、看书</br>
+		看电影、宅舞</br>
+		
+		</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
+        <h4><strong>星座</strong></h4>
+        <p>
+		  处女座
+		</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bullseye"></i>
+        <h4><strong>联系方式</strong></h4>
+        <p>请联系以下神秘代码</br>
+		  524343578</p>
       </div>
     </div>
   </div>
 </div>
+<!-- Portfolio Section -->
+<div id="works">
+  <div class="container"> <!-- Container -->
+    <div class="section-title text-center center">
+      <h2> <strong>不能错过的嘉欣</strong></h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p>被星星环绕的小偶像</p>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">回到主页</a></li>
+            
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+	  
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com' target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/01.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+		
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com" target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/02.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+		
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com" target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/03.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+		
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com' target='_blank' title="暂时未知">暂时未知</h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/04.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com' target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/05.jpg" class="img-responsive" alt="暂时未知">
+			  </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com" target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知/small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/06.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding app web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com" target='_blank' title="暂时未知">暂时未知</a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/07.jpg" class="img-responsive" alt="暂时未知"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web app">
+          <div class="portfolio-item">
+		  
+            <div class="hover-bg"> 
+              <div class="hover-text">
+                <h4><a href='http://www.baidu.com' target='_blank' title="暂时未知">暂时未知 </a></h4>
+                <small>暂时未知</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> 
+				</div>
+              <img src="img/portfolio/08.jpg" class="img-responsive" alt="暂时未知">
+		    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
 
+	
+<!-- Team Section -->
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2> <strong>不同的嘉欣</strong></h2>
+      <hr>
+      <p>每一个都是可爱的样子</p>
+    </div>
+    <div id="row">
+	
+	<div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/02.jpg" alt="萌萌的嘉欣" class="img-circle team-img">
+          <div class="caption">
+            <h3>萌萌的嘉欣</h3>
+           
+          </div>
+        </div>
+      </div>
+	
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/01.jpg" alt="可爱的嘉欣" class="img-circle team-img">
+          <div class="caption">
+            <h3>可爱的嘉欣</h3>
+            
+          </div>
+        </div>
+      </div>
+	  
+      
+	  
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/03.jpg" alt="帅气的嘉欣" class="img-circle team-img">
+          <div class="caption">
+            <h3>帅气的嘉欣</h3>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/04.jpg" alt="超钓的嘉欣" class="img-circle team-img">
+          <div class="caption">
+            <h3>超钓的嘉欣</h3>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonials Section -->
+<div id="testimonials" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2><strong>不知何时缘起，一往情深</strong></h2>
+      <hr>
+    </div>
+    
+  </div>
+</div>
 
+<!-- Contact Section -->
+
+</div>
+<nav id="footer">
+  <div class="container">
+    <div class="pull-left fnav">
+      <p>Copyright &copy; 2017 作者:永远不扎心的小粉丝 
+    </div>
+    
+  </div>
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+ $(function()
+ {
+ var u = navigator.userAgent;
+if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
+   $(".hover-bg .hover-text").css({'opacity':'1'});
+   
+   $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+   
+   $(".hover-bg .hover-text>i").css({'opacity':'1'});
+} 
+    
+ });
+  
+</script>
 </body>
 </html>
