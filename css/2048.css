@@ -65,3 +65,8 @@ header p{
 .imgCell{
     object-fit: cover;
 }
+
+html{
+    touch-action:none;
+    touch-action:pan-y;
+    }
