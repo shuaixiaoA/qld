@@ -1,374 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html >
 <head>
-
-<title>向全世界安利左嘉欣</title>
-
-
-<!-- Favicons
-    ================================================== -->
-
-<link rel="shortcut icon" href="img/favicon_jianli.ico" type="image/x-icon">
-
-
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-
-<link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<title>秦露丹的2048</title>
+	<link rel="stylesheet" type="text/css" href="css/2048.css" media="all" />
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/main2048.js"></script>
+	<script type="text/javascript" src="js/support2048.js"></script>
+	<script type="text/javascript" src="js/showanimation2048.js"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i>主页</a>
-				<a class="navbar-brand page-scroll" href="game1.html"><i class="fa fa-terminal"></i>拼图游戏</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">基本资料</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#works">不可错过的嘉欣</a>
-                    </li>                    
-                                     
-                    <li>
-                        <a class="page-scroll" href="#team">不同的嘉欣</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#testimonials">想对嘉欣说的话</a>
-                    </li>                    
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-<!-- Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 style="color:pink">GNZ48-左嘉欣<span class="brand-heading"></span></h1>
-                        <p class="intro-text" style="color:red"></p>
-                        <a href="#services" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-<!--<div class="copyrights" style="color:pink">GNZ48-左嘉欣<a href="http://blog.youzewang.com/jianli" style="color:pink">被星星环绕的小偶像</a></div>-->
-<!-- Services Section -->
-<div id="services" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>基本 <strong>资料</strong></h2>
-      <hr>
-      </div>
-    <div class="space"></div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-laptop"></i>
-        <h4><strong>个人信息</strong></h4>
-        <p>
-		 中文名:左嘉欣：性别：女</br>
-		年龄: 21岁 籍贯：上海
-		</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-code"></i>
-        <h4><strong>兴趣爱好</strong></h4>
-        <p>
-		摄影、游泳、看书</br>
-		看电影、宅舞</br>
+<body>
+	<header>
+		<h1>养眼小游戏</h1>
+		<a href="javascript:newGame()" id="newGameButton">重新开始</a>
+		<p>得分：<span id="score">0</span>&nbsp;&nbsp;最高分：<span id="maxScore">0</span></p>
+	</header>
+	<div id="gridContainer">
+		<div class="gridCell" id="grid-cell-0-0"></div>
+		<div class="gridCell" id="grid-cell-0-1"></div>
+		<div class="gridCell" id="grid-cell-0-2"></div>
+		<div class="gridCell" id="grid-cell-0-3"></div>
 		
-		</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
-        <h4><strong>星座</strong></h4>
-        <p>
-		  处女座
-		</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bullseye"></i>
-        <h4><strong>联系方式</strong></h4>
-        <p>请联系以下神秘代码</br>
-		  524343578</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Section -->
-<div id="works">
-  <div class="container"> <!-- Container -->
-    <div class="section-title text-center center">
-      <h2> <strong>不能错过的嘉欣</strong></h2>
-      <hr>
-      <div class="clearfix"></div>
-      <p>被星星环绕的小偶像</p>
-    </div>
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">回到主页</a></li>
-            
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-	  
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av14139924/?from=search&seid=4055724237289972109' target='_blank' title="嘉欣生日公演">嘉欣生日公演</a></h4>
-                <small>最值得珍藏的公演</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/01.jpg" class="img-responsive" alt="嘉欣生日公演"></div>
-          </div>
-        </div>
+		<div class="gridCell" id="grid-cell-1-0"></div>
+		<div class="gridCell" id="grid-cell-1-1"></div>
+		<div class="gridCell" id="grid-cell-1-2"></div>
+		<div class="gridCell" id="grid-cell-1-3"></div>
 		
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av13964352/?from=search&seid=11073407748639074975" target='_blank' title="嘉欣精灵">嘉欣精灵</a></h4>
-                <small>可爱的精灵</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/02.jpg" class="img-responsive" alt="嘉欣精灵"></div>
-          </div>
-        </div>
+		<div class="gridCell" id="grid-cell-2-0"></div>
+		<div class="gridCell" id="grid-cell-2-1"></div>
+		<div class="gridCell" id="grid-cell-2-2"></div>
+		<div class="gridCell" id="grid-cell-2-3"></div>
 		
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av14130784/?from=search&seid=17400106136060743809" target='_blank' title="粉红狙击手">粉红狙击手</a></h4>
-                <small>钓系偶像</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/03.jpg" class="img-responsive" alt="粉红狙击手"></div>
-          </div>
-        </div>
-		
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av14215123/?from=search&seid=10808574886456931725' target='_blank' title="纯情主义">纯情主义</h4>
-                <small>美得很惊艳</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/04.jpg" class="img-responsive" alt="纯情主义"></div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av7037510/?from=search&seid=17200982333880478548' target='_blank' title="巧克力之吻">巧克力之吻</a></h4>
-                <small>粉红少女</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/05.jpg" class="img-responsive" alt="巧克力之吻">
-			  </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av9692100/?from=search&seid=13046018077278762324" target='_blank' title="trouble maker">trouble maker</a></h4>
-                <small>攻气十足</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/06.jpg" class="img-responsive" alt="trouble maker"></div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av9041986/?from=search&seid=4347365753997338972" target='_blank' title="爱到累了">爱到累了</a></h4>
-                <small>爱无止境</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> </div>
-              <img src="img/portfolio/07.jpg" class="img-responsive" alt="爱到累了"></div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web app">
-          <div class="portfolio-item">
-		  
-            <div class="hover-bg"> 
-              <div class="hover-text">
-                <h4><a href='https://www.bilibili.com/video/av11259638/?from=search&seid=12492903171277925395' target='_blank' title="挥着翅膀的女孩">挥着翅膀的女孩 </a></h4>
-                <small>飞到最美好的地方</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search"></i> 
-				</div>
-              <img src="img/portfolio/08.jpg" class="img-responsive" alt="挥着翅膀的女孩">
-		    </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- About Section -->
-
-	
-<!-- Team Section -->
-<div id="team" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2> <strong>不同的嘉欣</strong></h2>
-      <hr>
-      <p>每一个都是可爱的样子</p>
-    </div>
-    <div id="row">
-	
-	<div class="col-md-3 col-sm-6">
-        <div class="thumbnail"> <img src="img/team/02.jpg" alt="萌萌的嘉欣" class="img-circle team-img">
-          <div class="caption">
-            <h3>萌萌的嘉欣</h3>
-           
-          </div>
-        </div>
-      </div>
-	
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail"> <img src="img/team/01.jpg" alt="可爱的嘉欣" class="img-circle team-img">
-          <div class="caption">
-            <h3>可爱的嘉欣</h3>
-            
-          </div>
-        </div>
-      </div>
-	  
-      
-	  
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail"> <img src="img/team/03.jpg" alt="帅气的嘉欣" class="img-circle team-img">
-          <div class="caption">
-            <h3>帅气的嘉欣</h3>
-           
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail"> <img src="img/team/04.jpg" alt="超钓的嘉欣" class="img-circle team-img">
-          <div class="caption">
-            <h3>超钓的嘉欣</h3>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Testimonials Section -->
-<div id="testimonials" class="text-center" style="height:900px">
-  <div class="container">
-    <div class="section-title center">
-      <h2 style="color:pink;"><strong>我打江南走过</strong></h2>
-									<h2 style="color:pink;"><strong>那等在季节里的容颜如莲花的开落</strong></h2>
-<h2 style="color:pink;"><strong></strong></h2>
-							<h2 style="color:pink;"><strong>东风不来，三月的柳絮不飞</strong></h2>
-							<h2 style="color:pink;"><strong>你的心是小小的寂寞的城</strong></h2>
-							<h2 style="color:pink;"><strong>恰若青石的街道向晚</strong></h2>
-							<h2 style="color:pink;"><strong>跫音不响，三月的春帷不接</strong></h2>
-							<h2 style="color:pink;"><strong>你的心是小小窗扉紧掩</strong></h2>
-<h2 style="color:pink;"><strong></strong></h2>
-							<h2 style="color:pink;"><strong>我达达的马蹄是美丽的错误</strong></h2>
-							<h2 style="color:pink;"><strong>我不是归人，是个过客</strong></h2>
-	   
-      <hr>
-    </div>
-    
-  </div>
-</div>
-
-<!-- Contact Section -->
-
-</div>
-<nav id="footer">
-  <div class="container">
-    <div class="pull-left fnav">
-      <p>Copyright &copy; 2017 作者:永远不扎心的小粉丝 
-    </div>
-    
-  </div>
-</nav>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script>
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script>
-<script src="js/owl.carousel.js"></script>
-
-<!-- Javascripts
-    ================================================== --> 
-<script type="text/javascript" src="js/main.js"></script>
-
-<script>
- $(function()
- {
- var u = navigator.userAgent;
-if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
-   $(".hover-bg .hover-text").css({'opacity':'1'});
-   
-   $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
-   
-   $(".hover-bg .hover-text>i").css({'opacity':'1'});
-} 
-    
- });
-  
-</script>
+		<div class="gridCell" id="grid-cell-3-0"></div>
+		<div class="gridCell" id="grid-cell-3-1"></div>
+		<div class="gridCell" id="grid-cell-3-2"></div>
+		<div class="gridCell" id="grid-cell-3-3"></div>
+	</div>
 </body>
 </html>
