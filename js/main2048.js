@@ -218,7 +218,9 @@ $(document).keydown(function (event) {
             break;
     }
 });
-
+document.addEventListener('touchmove', function (event) {
+    event.preventDefault();
+}, { passive: false })
 
 document.addEventListener('touchstart', function (event) {
     //touches.event
@@ -228,6 +230,7 @@ document.addEventListener('touchstart', function (event) {
 
 
 document.addEventListener('touchend', function (event) {
+
     //changedTouches
     tox = event.changedTouches[0].pageX;
     toy = event.changedTouches[0].pageY;
@@ -283,7 +286,9 @@ function moveLeft() {
     if (!canMoveLeft(board)) {
         return false;
     }
-
+    document.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, { passive: false })
     //moveLeft
     for (var i = 0; i < 4; i++)
         for (var j = 1; j < 4; j++) {
@@ -360,6 +365,9 @@ function moveRight() {
     if (!canMoveRight(board)) {
         return false;
     }
+    document.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, { passive: false })
     //moveRight
     for (var i = 0; i < 4; i++)
         for (var j = 2; j >= 0; j--) {
